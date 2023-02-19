@@ -1,7 +1,6 @@
 # mbira-modelling
 Mbira is a family of instruments that originated in Zimbabwe over 500 years ago.
 The music is characterized by melodic and complex rhythmic variations on a theme, akin to European classical music.
-Don't expect familiarity, though. This is music of a language group much older than that which English is from.
 
 [![external mbira video](https://img.youtube.com/vi/tKbfUEhjuH4/0.jpg)](https://www.youtube.com/watch?v=tKbfUEhjuH4)
 
