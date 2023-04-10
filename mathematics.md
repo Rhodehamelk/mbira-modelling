@@ -28,7 +28,7 @@ $A = wd = \frac{1}{90000}$ under the assumption of a simple tine, and for a $Y �
 
 For $b^2 < 4mk$, the root of the auxillary equation $mr^2 + br + k = 0$ is the complex value $\frac{-b}{2m} ± i\frac{\sqrt{b^2 - 4mk}}{2m} = α ± iβ$.
 
-In this case, the general solution is $x(t) = Ae^{αt}sin(βt+ø)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is the damping factor
+In this case, the general solution is $x(t) = Ae^{αt}sin(βt+ø)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is the product of the amplitude and damping factor.
 
 ## An aside on assumptions
 
