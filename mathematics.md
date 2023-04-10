@@ -32,7 +32,7 @@ In this case, the general solution is $x(t) = Ae^{αt}sin(βt+ø)$, where $Ae^{�
 
 ## An aside on assumptions
 
-$A$ is assumed to be the area of a simple rectangle of constant width and depth in this initial approximation. Thereby $k$ is reduced to a function of $l$ alone. However, a nontrivial approximation might account for the fan-shaped tine by approximating the cross-sectional area as $A = \int_{0}^{L}f(l)dl$, where $f(l)$ is a function that determines the cross-sectional area of a slice of the tine as defined by a curved shape in 3 dimensional space. That being said, such a consideration is well out-of-scope for the moment and possibly incorrect.
+A nontrivial approximation might account for the fan-shaped tine with the definition of the cross-sectional area as $\int_{0}^{L}f(l)dl$, where $f(l)$ is a function that determines the cross-sectional area of a slice of the tine as defined by a curved shape in 3 dimensional space. That being said, such a consideration is well out-of-scope for the moment and possibly incorrect.
 
 [^1]: Material Densities, https://spectro.in/Densities-of-Materials.html
 [^2]: Damping Constants, https://help.solidworks.com/2016/english/solidworks/cworks/r_viscous_damping_ratios.htm
