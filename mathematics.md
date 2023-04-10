@@ -34,6 +34,8 @@ For $b^2 < 4mk$, the root of the auxillary equation $mr^2 + br + k = 0$ is the c
 
 In this case, the general solution is $x(t) = Ae^{αt}sin(βt+ø)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is the product of the amplitude and damping factor.
 
+If the above statements are relevant and true, then the solution only applies to a single tine. This approximation may need to be extended to account for multiple tines being played together.
+
 ## An aside on assumptions
 
 A nontrivial approximation might account for the fan-shaped tine with the definition of the cross-sectional area as $\int_{0}^{L}f(l)dl$, where $f(l)$ is a function that determines the cross-sectional area of a slice of the tine as defined by a curved shape in 3 dimensional space. That being said, such a consideration is well out-of-scope for the moment and possibly incorrect.
