@@ -6,6 +6,10 @@ An mbira is approximated by a set of frequencies, defined by a linear distributi
 
 The forces that act on an mbira tine in motion are determined to be Newton’s second law, a damping force, and a restoring force. External forces are assumed to be negligible, which therefore gives that $m\frac{d^2x}{dt^2} +b\frac{dx}{dt} +kx = 0$ with the variables defined as follows.
 
+### Time *t*
+
+Time, as measured discretely by a sample rate.
+
 ### Displacement *x*
 
 How far the tine is displaced from it's equilibrium position at $x=0$. This variable controls the amplitude of the resultant oscillation.
