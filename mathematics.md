@@ -12,11 +12,11 @@ Time, as measured discretely by a sample rate.
 
 ### Displacement *x*
 
-How far the tine is displaced from it's equilibrium position at $x=0$. This variable controls the amplitude of the resultant oscillation.
+How far the tine is displaced from its equilibrium position at $x=0$. This variable controls the amplitude of the resultant oscillation.
 
 ### Mass *m = VD*
 
-Mass, $m$ as a product of volume $V$ and density $d$, relies on the assumption of constant tine width and depth. To assume a width $w = \frac{1}{150}m$ and depth of $d = \frac{1}{600}m$, we can estimate the volume of a tine to be $lwd = l \frac{1}{90000}m^3$. Wrought iron has a density $D = 7750\frac{kg}{m^3}$[^1], so the mass in kilograms of a tine can be approximated as a function of length: $m(l) = l\frac{31}{360}$.
+Mass, $m$, as a product of volume $V$ and density $D$, relies on the assumption of constant tine width and depth. To assume a width $w = \frac{1}{150}m$ and depth of $d = \frac{1}{600}m$, we can estimate the volume of a tine to be $lwd = l \frac{1}{90000}m^3$. Wrought iron has a density $D = 7750\frac{kg}{m^3}$[^1], so the mass in kilograms of a tine can be approximated as a function of length: $m(l) = l\frac{31}{360}$.
 
 ### Damping constant *b = 0.0003*[^2] 
 
