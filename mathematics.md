@@ -4,7 +4,7 @@ An mbira is approximated by a set of frequencies, defined by a linear distributi
 
 ## The Differential Equation
 
-The forces that act on an mbira tine in motion are determined to be Newton’s second law, a restoring force, and a damping force. External forces are assumed to be negligible, which therefore gives that $m\frac{d^2x}{dt^2} +b\frac{dx}{dt} +kx = 0$ with the variables defined as follows.
+The forces that act on an mbira tine in motion are determined to be Newton’s second law, a damping force, and a restoring force. External forces are assumed to be negligible, which therefore gives that $m\frac{d^2x}{dt^2} +b\frac{dx}{dt} +kx = 0$ with the variables defined as follows.
 
 ### Displacement *x*
 
