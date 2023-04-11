@@ -3,15 +3,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TABLE_LENGTH pow(2, 16)
+#define SAMPLE_RATE 44100
+
 #define DENSITY 0.0075
 #define RIGIDITY 52500000.0
 #define DAMPER 0.0003
 
 
 // time
-double *linspace(int table_length) {
-	int L = table_length+1;
+double *linspace(int duration) {
+	int L = duration+1;
 	int l = 0;
 	int d = 1.0;
 
@@ -77,8 +78,11 @@ int main() {
 	double A = 1;
 
 	// TODO: move this to its own function
-	double *t = linspace(TABLE_LENGTH);
-	for (int n; n<TABLE_LENGTH+1; n++) {
+	int seconds = 4;
+	int duration = seconds*SAMPLE_RATE;
+	
+	double *t = linspace(duration);
+	for (int n; n<duration+1; n++) {
 		t[n] = A*exp(a*n)*sin(b*n);
 		printf("%d %lf\n", n, t[n]);
 	}
