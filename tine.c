@@ -3,23 +3,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define TABLE_LENGTH pow(2, 13)
+#define TABLE_LENGTH pow(2, 16)
 #define DENSITY 0.0075
 #define RIGIDITY 52500000.0
 #define DAMPER 0.0003
 
-typedef double complex waveform_t;
 
 // time
-waveform_t *linspace(int table_length) {
+double *linspace(int table_length) {
 	int L = table_length+1;
 	int l = 0;
 	int d = 1.0;
 
-	waveform_t *t = calloc(L, sizeof(waveform_t));
+	double *t = calloc(L, sizeof(double));
 	double step = (d - l) / (double)(L - 1);
 	for (int n = 0; n < L; n++) t[n] = (l + ((double)n*step));
-
 	return t;
 }
 
@@ -63,12 +61,9 @@ double frequency(double T) {
 }
 
 int main() {
-	double l;
+	double l = 128;
 	double w = 100.0/15.0;
 	double d = 1.0;
-
-	printf("Enter a tine length: \n");
-	scanf("%lf", &l);
 
 	double v = volume(l, w, d);
 
@@ -78,10 +73,16 @@ int main() {
 	double a = alpha(m, DAMPER);
 	double b = beta(m, DAMPER, K);
 
-	double T = period(b);
+	//TODO: parameterize amplitude with displacement (in mm)
+	double A = 1;
 
-	double f = frequency(T);
-	printf("\tf = %lf\n", f);
+	// TODO: move this to its own function
+	double *t = linspace(TABLE_LENGTH);
+	for (int n; n<TABLE_LENGTH+1; n++) {
+		t[n] = A*exp(a*n)*sin(b*n);
+		printf("%d %lf\n", n, t[n]);
+	}
+
 	return 0;
 
 }
