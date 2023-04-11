@@ -23,7 +23,7 @@ The first objective is to describe a set of pitches of accurate tone and timbre 
 
 ## Project Progress
 
-- Objective 1 is complete. [Mathematics.md](mathematics.md) demonstrates a mathematical model of a tine that preserves the octave relationship. Success! 
+- Objective 1 is complete. [Mathematics.md](mathematics.md) demonstrates a mathematical model of a tine that preserves the octave relationship. [Tine.c](tine.c) begins to implement the solution to the differential equation in the discrete time domain, and aspires to generate a damped sinusoid by the end of April 11th.
 
 ## Technical Details
 The language of choice for this project is going to be Python, when development begins.
