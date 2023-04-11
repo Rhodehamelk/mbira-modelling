@@ -26,6 +26,7 @@ Click the above image to be linked to a beautiful youtube video.
 
 - Objective 2 see [Modality.md](modality.md) for progress.
 
+
 ## Project Milestones
 ### Worst Case Scenario
 A disjointed digital instrument that does not give consideration to modality, sympathetic resonance, or timbre.
@@ -35,7 +36,3 @@ A capable digital instrument that is able to loop a set of pitches in some kind 
 
 ### Stretch
 As expected, but also with consideration to sympathetic resonance.
-
-
-## Todo
-- Implement the simplified tine wavetable as an array of complex doubles. Then DFT decomposition becomes feasible. Possibly requires the general solution of the ODE to be restructured.
