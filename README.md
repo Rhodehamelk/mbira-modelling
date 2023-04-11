@@ -8,9 +8,8 @@ Click the above image to be linked to a beautiful youtube video.
 
 
 ## About the project
-The first objective is to describe a set of pitches of accurate tone and timbre by means of a mathematical model of an abstract mbira tine.
 
-- Objective 1 is to define a differential equation that describes the dampened sinusoidal motion of a struck mbira tine.
+- Objective 1 is to define a differential equation that describes the dampened sinusoidal motion of a struck mbira tine, and graph the oscillation.
 
 - Objective 2 is to give consideration to the timbre of the instrument. Ideas are: to use FM synthesis to simulate the rasp of a thumb sliding off of a displaced tine; and to use resonance to simulate, well, the resonance of the soundboard.
 
@@ -23,4 +22,8 @@ The first objective is to describe a set of pitches of accurate tone and timbre 
 
 ## Project Progress
 
-- Objective 1 is complete. [Mathematics.md](mathematics.md) demonstrates a mathematical model of a tine that preserves the octave relationship. [Tine.c](tine.c) begins to implement the solution to the differential equation in the discrete time domain, and aspires to generate a damped sinusoid by the end of April 11th.
+- Objective 1 is complete. [Mathematics.md](mathematics.md) demonstrates a mathematical model of a tine that preserves the octave relationship. [Tine.c](tine.c) lays the foundation for a discrete-time solution to the differential equation.
+
+## Todo
+Expand tine.c into the time domain.
+Consider the value of a type(complex double) implementation and consider the solution as a (sine, cosine) pair. Then plot a damped sinusoid. 
