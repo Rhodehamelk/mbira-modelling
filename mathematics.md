@@ -16,7 +16,7 @@ How far the tine is displaced from equilibrium at $x=0$ (measured in mm). The re
 
 ### Mass *m = VD*
 
-Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, relies on the assumption of constant tine width and depth. To assume a width $w = \frac{100}{15}mm$ and depth of $d = \frac{10}{6}mm$, we can estimate the volume of a tine to be $lwd = l \frac{100}{9}mm^3$. The density $D$ of wrought iron is $D = 7750\frac{kg}{m^3} = 0.0075\frac{g}{mm^3}$[^1], so the mass in grams of a tine can be approximated as a function of length in mm: $m(l) = l\frac{31}{360}$.
+Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, relies on the assumption of constant tine width and depth. To assume a width $w = \frac{100}{15}mm$ and depth of $d = 1mm$, we can estimate the volume of a tine to be $lwd = l \frac{100}{15}mm^3$. The density $D$ of wrought iron is $D = 7750\frac{kg}{m^3} = 0.0075\frac{g}{mm^3}$[^1], so the mass in grams of a tine can be approximated as a function of length in mm: $m(l) = \frac{l}{20}$.
 
 ### Damping constant *b = 0.0003*[^2] 
 
@@ -36,18 +36,17 @@ If the above statements are relevant and true, then the solution only applies to
 
 ## An initial calculation
 
-For $l = 128$, it is determined that $m(128) = 1,486$ and $k(128) = 4,557,291$.
+For $l = 128$, it is determined that $m(128) = 6.4$ and $k(128) = 4,557,291$.
 
-$4m(128)k(128)$ ≈ 27 billion, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
+$4m(128)k(128) ≈ 116,666,649$, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
 
-$\alpha = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.000000100911458$
+$\alpha = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.0000234375$
 
-$\beta = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{27,088,537,704}}{2972} ≈ 9,114,528$
+$\beta = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{116,666,649}}{2972} ≈ 39,255$
 
-The sine factor has a period of $T = \frac{2\pi}{\beta} ≈ 0.000000689355298$ and it follows that the frequency $f = \frac{1}{T} = 1,450,630 Hz
+The sine factor has a period of $T = \frac{2\pi}{\beta} = 0.0001600596819$ and it follows that the frequency $f = \frac{1}{T} ≈ 6,247 Hz$
 
-This seems waaaaay too high and leads me to believe that there is an inaccuracy.
-
+This is still way too high. The frequency of the tine of 128mm is approximately 117Hz.
 
 ## An aside on assumptions
 
