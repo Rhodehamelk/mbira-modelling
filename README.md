@@ -1,6 +1,6 @@
 # mbira-modelling
 Mbira is a family of instruments that originated in Zimbabwe over 500 years ago.
-The music is characterized by melodic and complex rhythmic variations on a theme, akin to European classical music.
+The music is characterized by melodic and complex rhythmic variations on a theme, akin to European classical music (but with a greater historical emphasis on night-long, trance-induced spirit medium possession).
 
 [![external mbira video](https://img.youtube.com/vi/tKbfUEhjuH4/0.jpg)](https://www.youtube.com/watch?v=tKbfUEhjuH4)
 
@@ -8,19 +8,18 @@ Click the above image to be linked to a beautiful youtube video.
 
 
 ## About the project
-I am motivated to explore physical modelling techniques on a variety of levels:
+The first objective is to describe a set of pitches of accurate tone and timbre by means of a mathematical model of an abstract mbira tine.
 
-- Basic: generate tones with a differential equation that describes the motion of a tine of a certain dimension, struck with a specific velocity.
+- Objective 1 is to define a differential equation that describes the dampened sinusoidal motion of a struck mbira tine. (see: mathematics.md)
 
-- Intermediate: synthesize a differential equation that decribes the resonance of the wooden soundboard, and combine.
+- Objective 2 is to synthesize one tone, then two tones played separately, then two tones played together.
 
-- Advanced: consider FM synthesis techniques to add noise and buzzing to generated tones.
+- Objective 3 is to create a digital structure that replicates the complex layout of tines on an mbira.
+
+- Objective 4 is to write a program that will play an input score.
+
+- Objective 5, if time affords it, will be to implement a FFT to deconstruct a recorded mbira performance into a score.
+
 
 ## Technical Details
-It would not be difficult to write score files and MIDI capabilities with a functional basic implementation.
-At that point, we would determine the applicability of real-time wave calculation versus a wavetable stored in memory.
-
-My current thoughts are that, due to the small count of tines (n < 30), the wavetable approach makes more sense.
-However, that may not afford variable velocity — in which case, I think real-time tone generation makes more sense.
-
-I am not attached to using Rust as the language of choice, but it is what I have considered so far.
+The language of choice for this project is Python.
