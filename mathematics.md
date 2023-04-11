@@ -22,9 +22,9 @@ Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, r
 
 ### Spring constant *k*
 
-For some $F$ = force, $L$ = length, $\sigma$ = cross-sectional area, and $∆x$ = transverse displacement, the Shear Modulus of Rigidity, $G = \frac{FL}{\sigma∆x}$, determines the rigidity of a metal tine subject to transverse forces. It was determined that iron has a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
+For some $F$ = force, $l$ = length, $\sigma$ = cross-sectional area, and $∆x$ = transverse displacement, the Shear Modulus of Rigidity, $G = \frac{lF}{\sigma∆x}$, determines the rigidity of a metal tine subject to transverse forces. It was determined that iron has a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
 
-To isolate $F = \frac{\sigma∆xG}{L}$ allows Hooke's Law, $F = -k∆x$, to relate directly to $G$, such that $-k∆x = \frac{G∆x\sigma}{L}$. Thus $k = \frac{G\sigma}{L}$ (but why does the negative disappear?). With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $\sigma = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = \frac{350,000,000}{l} \frac{N}{mm}$
+To isolate $F = \frac{\sigma∆xG}{l}$ allows Hooke's Law, $F = -k∆x$, to relate directly to $G$, such that $-k∆x = \frac{G∆x\sigma}{l}$. Thus $k = \frac{G\sigma}{l}$ (but why does the negative disappear?). With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $\sigma = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = \frac{350,000,000}{l} \frac{N}{mm}$
 
 ## The General Solution to the Differential Equation
 
