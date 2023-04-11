@@ -24,7 +24,7 @@ Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, r
 
 The Shear Modulus, or Modulus of Rigidity, $G = Gpa = 10^6 \frac{N}{mm^2}$[^3], applies to this model. $G$ measures how much a material can flex before it shears, and online resources have determined iron to have a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
 
-Online resources determine that $G = \frac{FL}{A∆x}$, where $F$ = force, $L$ = length, $A$ = cross-sectional area, and $∆x$ = transverse displacement. To solve for $F$ allows Hooke's Law to relate directly to $G$, such that $k$ is solved for. Thus $k = \frac{GA}{L}$. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $A = \frac{100}{9}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = -\frac{583,333,333}{l} \frac{N}{mm}$
+Online resources determine that $G = \frac{FL}{A∆x}$, where $F$ = force, $L$ = length, $A$ = cross-sectional area, and $∆x$ = transverse displacement. To solve for $F$ allows Hooke's Law to relate directly to $G$, such that $k$ is solved for. Thus $k = \frac{GA}{L}$. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $A = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = -\frac{350,000,00}{l} \frac{N}{mm}$
 
 ## The General Solution to the Differential Equation
 
@@ -36,17 +36,17 @@ If the above statements are relevant and true, then the solution only applies to
 
 ## An initial calculation
 
-For $l = 128$, it is determined that $m(128) = 6.4$ and $k(128) = 4,557,291$.
+For $l = 128$, it is determined that $m(128) = 6.4$ and $k(128) = 2,734,375$.
 
-$4m(128)k(128) ≈ 116,666,649$, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
+$4m(128)k(128) ≈ 70,000,000$, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
 
 $\alpha = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.0000234375$
 
-$\beta = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{116,666,649}}{2972} ≈ 39,255$
+$\beta = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{70,000,000}}{12.8} ≈ 653.64$
 
-The sine factor has a period of $T = \frac{2\pi}{\beta} = 0.0001600596819$ and it follows that the frequency $f = \frac{1}{T} ≈ 6,247 Hz$
+The sine factor has a period of $T = \frac{2\pi}{\beta} = 0.0096126$ and it follows that the frequency $f = \frac{1}{T} ≈ 104.03 Hz$
 
-This is still way too high. The frequency of the tine of 128mm is approximately 117Hz.
+This is the most accurate estimation yet.
 
 ## An aside on assumptions
 
