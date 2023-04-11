@@ -24,7 +24,7 @@ Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, r
 
 The Shear Modulus, or Modulus of Rigidity, $G = Gpa = 10^6 \frac{N}{mm^2}$[^3], applies to this model. $G$ measures how much a material can flex before it shears, and online resources have determined iron to have a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
 
-Online resources determine that $G = \frac{FL}{A∆x}$, where $F$ = force, $L$ = length, $A$ = cross-sectional area, and $∆x$ = transverse displacement. To solve for $F$ allows Hooke's Law to relate directly to $G$, such that $k$ is solved for. Thus $k = \frac{GA}{L}$. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $A = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = -\frac{350,000,00}{l} \frac{N}{mm}$
+Online resources determine that $G = \frac{FL}{A∆x}$, where $F$ = force, $L$ = length, $A$ = cross-sectional area, and $∆x$ = transverse displacement. To solve for $F$ allows Hooke's Law to relate directly to $G$, such that $k$ is solved for. Thus $k = \frac{GA}{L}$. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $A = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = -\frac{350,000,000}{l} \frac{N}{mm}$
 
 ## The General Solution to the Differential Equation
 
@@ -40,13 +40,19 @@ For $l = 128$, it is determined that $m(128) = 6.4$ and $k(128) = 2,734,375$.
 
 $4m(128)k(128) ≈ 70,000,000$, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
 
-$\alpha = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.0000234375$
+$\alpha_1 = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.0000234375$
 
-$\beta = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{70,000,000}}{12.8} ≈ 653.64$
+$\beta_1 = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{70,000,000}}{12.8} ≈ 653.64$
 
 The sine factor has a period of $T = \frac{2\pi}{\beta} = 0.0096126$ and it follows that the frequency $f = \frac{1}{T} ≈ 104.03 Hz$
 
-This is the most accurate estimation yet.
+This is a relatively accurate estimation. Next, to see if $f(\frac{l}{2})$ will approximate $2f(l)$:
+
+$4m(64)k(64) ≈ 70,000,000$. What is surprisingly obvious with hindsight is that the dependency on length is eliminated for this term.
+
+$\alpha_2 = -0.000046875$ and $\beta_2 = 1,307.28$ so $T = 0.00011734$ thus $f ≈ 208.015 Hz$
+
+So it is the case that the octave relationship holds between tines of length $l$ and $2l$.
 
 ## An aside on assumptions
 
