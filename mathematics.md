@@ -50,7 +50,7 @@ This is a relatively accurate estimation. Next, to see if $f(\frac{l}{2})$ will 
 
 $4m(64)k(64) ≈ 70,000,000$. What is surprisingly obvious with hindsight is that the dependency on length is eliminated for this term.
 
-$\alpha_2 = -0.000046875$ and $\beta_2 = 1,307.28$ so $T = 0.00011734$ thus $f ≈ 208.015 Hz$
+$\alpha_2 = -0.000046875$ and $\beta_2 = 1,307.28$, so $T = 0.00011734$ thus $f ≈ 208.015 Hz$
 
 So it is the case that the octave relationship holds between tines of length $l$ and $2l$.
 
