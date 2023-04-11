@@ -25,5 +25,6 @@ Click the above image to be linked to a beautiful youtube video.
 - Objective 1 is complete. [Mathematics.md](mathematics.md) demonstrates a mathematical model of a tine that preserves the octave relationship. [Tine.c](tine.c) lays the foundation for a discrete-time solution to the differential equation.
 
 ## Todo
-Expand tine.c into the time domain.
-Consider the value of a type(complex double) implementation and consider the solution as a (sine, cosine) pair. Then plot a damped sinusoid. 
+- Listen to the sound. Will require a much larger table length, or a reconsideration of the implementation. Maybe both.
+
+- Consider the value of a type(complex double) implementation in DFT; and consider the solution as a (sine, cosine) pair. 
