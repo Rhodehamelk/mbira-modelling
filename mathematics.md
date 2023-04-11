@@ -22,37 +22,31 @@ Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, r
 
 ### Spring constant *k*
 
-The Shear Modulus, or Modulus of Rigidity, $G = Gpa = 10^6 \frac{N}{mm^2}$[^3], applies to this model. $G$ measures how much a material can flex before it shears, and online resources have determined iron to have a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
+For some $F$ = force, $L$ = length, $\sigma$ = cross-sectional area, and $∆x$ = transverse displacement, the Shear Modulus of Rigidity, $G = \frac{FL}{\sigma∆x}$, determines the rigidity of a metal tine subject to transverse forces. It was determined that iron has a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
 
-Online resources determine that $G = \frac{FL}{A∆x}$, where $F$ = force, $L$ = length, $A$ = cross-sectional area, and $∆x$ = transverse displacement. To solve for $F$ allows Hooke's Law to relate directly to $G$, such that $k$ is solved for. Thus $k = \frac{GA}{L}$. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $A = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = -\frac{350,000,000}{l} \frac{N}{mm}$
+To isolate $F = \frac{\sigma∆xG}{L}$ allows Hooke's Law, $F = -k∆x$, to relate directly to $G$, such that $-k∆x = \frac{G∆x\sigma}{L}$. Thus $k = \frac{G\sigma}{L}$ (but why does the negative disappear?). With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $\sigma = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = \frac{350,000,000}{l} \frac{N}{mm}$
 
 ## The General Solution to the Differential Equation
 
-For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{b^2 - 4mk}}{2m}$. It holds, then, that $\alpha = \frac{-b}{2m}$ and $\beta = \frac{\sqrt{4mk - b^2}}{2m}$.
+For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{b^2 - 4mk}}{2m}$. It holds, then, that $\alpha = \frac{-b}{2m}$ and $\beta = \frac{\sqrt{4mk - b^2}}{2m}$. Observe that $4m(l)k(l) = 4\frac{l}{20}\frac{350,000,000}{l} = 70,000,000$ is independent of $l$, and also that, for small enough values of $b$, it's subtraction is negligible. Therefore the discriminant can be approximated as $8366.6$.
 
 It follows that the general solution to the DE is $x(t) = Ae^{αt}sin(βt)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is a product of the amplitude and damping factor.
 
-If the above statements are relevant and true, then the solution only applies to a single tine. This approximation may need to be extended to account for multiple tines being played together.
+## The preservation of the octave
 
-## An initial calculation
+Let $l_1 = 128 \Rightarrow m(l_1) = 6.4 \land k(l_1) = 2,734,375$
 
-For $l = 128$, it is determined that $m(128) = 6.4$ and $k(128) = 2,734,375$.
+$\Rightarrow \alpha_1 = \frac{-b}{2m(l_1)} = \frac{-0.0003}{12.8} = -0.0000234375 \land \beta_1 = \frac{\sqrt{4m(l_1)k(l_1) - b^2}}{2m(l_1)} \approx \frac{\sqrt{70,000,000}}{12.8} \approx 653.64$
 
-$4m(128)k(128) ≈ 70,000,000$, which is much larger than $b^2 = 0.0003^2 = 0.00000009$ which confirms a negative discriminant and complex root.
+$\Rightarrow T_1 = \frac{2\pi}{\beta_1} = 0.0096126 \land f = \frac{1}{T} \Rightarrow f_1 \approx 104.03 Hz$, which is a precise approximation of the true pitch, if not necessarily accurate.
 
-$\alpha_1 = \frac{-b}{2m} = \frac{-0.0003}{2m(128)} = -0.0000234375$
+Let $l_2 = 64 \Rightarrow m(l_2) = 3.2 \land k(l_2) = 5,468,750$
 
-$\beta_1 = \frac{\sqrt{4mk - b^2}}{2m} ≈ \frac{\sqrt{70,000,000}}{12.8} ≈ 653.64$
+$\Rightarrow \alpha_2 = \frac{-b}{2m(l_2)} = \frac{-0.0003}{6.4} = -0.000046875 \land \beta_1 = \frac{\sqrt{4m(l_2)k(l_2) - b^2}}{2m(l_2)} ≈ \frac{\sqrt{70,000,000}}{6.4} \approx 1,307.28$
 
-The sine factor has a period of $T = \frac{2\pi}{\beta} = 0.0096126$ and it follows that the frequency $f = \frac{1}{T} ≈ 104.03 Hz$
+$\Rightarrow T_2 = \frac{2\pi}{\beta_2} = 0.00011734 \land f = \frac{1}{T} \Rightarrow f_2 \approx 208.01 Hz$
 
-This is a relatively accurate estimation. Next, to see if $f(\frac{l}{2})$ will approximate $2f(l)$:
-
-$4m(64)k(64) ≈ 70,000,000$. What is surprisingly obvious with hindsight is that the dependency on length is eliminated for this term.
-
-$\alpha_2 = -0.000046875$ and $\beta_2 = 1,307.28$, so $T = 0.00011734$ thus $f ≈ 208.015 Hz$
-
-So it is the case that the octave relationship holds between tines of length $l$ and $2l$.
+$\therefore f(l_2) \approx  2f(l_1) \Rightarrow$ the octave relationship holds.
 
 ## An aside on assumptions
 
