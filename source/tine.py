@@ -10,17 +10,17 @@ RIGIDITY = 52500000.0
 DAMPER = 0.0006
 
 # volume
-def volume(length, width, depth):
-    return length*width*depth
+def volume(l,w,d):
+    return l*w*d
 
 # mass
-def mass(volume, density):
-    return volume*density
+def mass(v, d):
+    return v*d
 
 # spring constant
-def k(G, volume, length):
-    u = G*volume
-    v = length**2
+def k(G, v, l):
+    u = G*v
+    v = l**2
 
     return u/v
 
@@ -62,6 +62,10 @@ if __name__ == "__main__":
     
     x = float(sys.argv[1])
 
+    # TODO: check what register the inputted length is in the range of.
+    # if   l ≤ 70 -> w = l*0.15, d = 2
+    # elif l > 70 -> w = l*0.05, d = 3
+    
     l = float(sys.argv[2])
     w = l * 0.05
     d = 2.5
