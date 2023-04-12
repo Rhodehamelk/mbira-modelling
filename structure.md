@@ -14,7 +14,7 @@ $B = \set{122, 147, 161, 177, 197, 215, 263} \land L = \set{241, 363, 325, 393, 
 
 The [mathematics](mathematics.md) describe a solution to a differential equation with respect to time that depends on length and displacement.
 
-To restrict displacement to a set of three values — e.g. $B_{\delta x} = 0.4, L_{\delta x} = 0.2, R_{\delta x} = 0.05$ — is to reduce the domain of the problem to two dimensions and simplify future progress.
+To restrict displacement to a set of three values — e.g. $B_{\Delta x} = 0.4, L_{\Delta x} = 0.2, R_{\Delta x} = 0.05$ — is to reduce the domain of the problem to two dimensions and simplify future progress.
 
 Suppose there exists a program that listens on standard input. When the program encounters correct input, it create a new audio stream, generate a damped sinusoid, and write it to that stream. This may offload the summation of signals to pyAudio. An alternative mechanism is to have one stream for each tine, though this may prove inefficient.
 
