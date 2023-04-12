@@ -55,4 +55,4 @@ A nontrivial approximation might account for the fan-shaped tine with the defini
 [^1]: Material Densities, https://spectro.in/Densities-of-Materials.html
 [^2]: Damping Constants, https://help.solidworks.com/2016/english/solidworks/cworks/r_viscous_damping_ratios.htm
 [^3]: Modulus of Rigidity & some values https://sciencenotes.org/shear-modulus-formula-and-definition/
-[^4]: Observe that $4m(l)k(l) = 4\frac{l}{20}\frac{350,000,000}{l} = 70,000,000$ is independent of $l$, and also that, for small enough values of $b$, it's subtraction is negligible. Therefore the discriminant can be approximated as a constant.
+[^4]: Observe that the expansion of *4mk* reveals that the term is not dependent on *l*, and also that, for small enough values of $b$, the subtraction is negligible. Therefore the discriminant can be approximated as a constant.
