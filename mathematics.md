@@ -28,7 +28,7 @@ To isolate $F = \frac{\sigma∆xG}{l}$ allows Hooke's Law, $F = -k∆x$, to rela
 
 ## The General Solution to the Differential Equation
 
-For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{b^2 - 4mk}}{2m}$. It holds, then, that $\alpha = \frac{-b}{2m}$ and $\beta = \frac{\sqrt{4mk - b^2}}{2m}$. Observe that $4m(l)k(l) = 4\frac{l}{20}\frac{350,000,000}{l} = 70,000,000$ is independent of $l$, and also that, for small enough values of $b$, it's subtraction is negligible. Therefore the discriminant can be approximated as $8366.6$.
+For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{4mk - b^2}}{2m}$.[^4] 
 
 It follows that the general solution to the DE is $x(t) = Ae^{αt}sin(βt)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is a product of the amplitude and damping factor.
 
@@ -55,3 +55,4 @@ A nontrivial approximation might account for the fan-shaped tine with the defini
 [^1]: Material Densities, https://spectro.in/Densities-of-Materials.html
 [^2]: Damping Constants, https://help.solidworks.com/2016/english/solidworks/cworks/r_viscous_damping_ratios.htm
 [^3]: Modulus of Rigidity & some values https://sciencenotes.org/shear-modulus-formula-and-definition/
+[^4]: Observe that $4m(l)k(l) = 4\frac{l}{20}\frac{350,000,000}{l} = 70,000,000$ is independent of $l$, and also that, for small enough values of $b$, it's subtraction is negligible. Therefore the discriminant can be approximated as a constant.
