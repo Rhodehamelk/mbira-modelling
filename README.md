@@ -22,7 +22,7 @@ Click the above image to be linked to a beautiful youtube video.
 
 ## Project Progress
 
-- Objective 1 is complete. [Mathematics.md](reference/mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine_python.py](tine_python.py) programmatically implements the mathematics and uses PyAudio to play the synthesized tone. As it sounds, the pitch is rather high for the tine length. Working on that.
+- Objective 1 is complete. [Mathematics.md](reference/mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.py](source/tine.py) programmatically implements the mathematics and uses PyAudio to play the synthesized tone. As it sounds, the pitch is rather high for the tine length. Working on that.
 
 - Objective 2: see [Structure.md](reference/structure.md) for progress.
 
