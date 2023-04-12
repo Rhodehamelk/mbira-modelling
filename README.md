@@ -22,7 +22,7 @@ Click the above image to be linked to a beautiful youtube video.
 
 ## Project Progress
 
-- Objective 1 is complete. [Mathematics.md](mathematics.mc) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.c](tine.c) programmatically implements the mathematics.
+- Objective 1 is complete. [Mathematics.md](mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.c](tine.c) programmatically implements the mathematics.
 
 - Objective 2 see [Modality.md](modality.md) for progress.
 
