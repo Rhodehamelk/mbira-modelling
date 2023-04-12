@@ -1,6 +1,6 @@
 # The General Idea
 
-An mbira is an instrument made of a set of metal tines that are fixed at one end and free to vibrate. The sound space of an mbira is approximated by a set of frequencies, defined by a linear distribution of dampened sinusoids that depend on a length, sum of forces, and initial displacement.
+An mbira is an instrument made of a set of metal tines that are fixed at one end and free to vibrate. The sound space of an mbira is approximated by a set of frequencies, defined by a linear distribution of damped sinusoids that depend on a length, sum of forces, and initial displacement.
 
 ## The Differential Equation
 
