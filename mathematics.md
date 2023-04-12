@@ -30,7 +30,11 @@ To isolate $F = \frac{\sigma∆xG}{l}$ allows Hooke's Law, $F = -k∆x$, to rela
 
 For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{4mk - b^2}}{2m}$.[^5] 
 
-It follows that the general solution to the DE is $x(t) = Ae^{αt}sin(βt)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is a product of the amplitude and damping factor.
+It follows that the general solution to the DE is $x(t) = Ae^{αt}sin(βt)$, where $Ae^{αt}$ is a product of the amplitude and damping factor.
+
+This, before appropriate substitutions for $m(l)$ and $k(l)$, can be expressed as a function of $l$, $t$, and $x$:
+
+$$f(l, t, x) = |x|e^{\frac{-bt}{2m(l)}}sin\left(\frac{\sqrt{4m(l)k(l) - b^2}}{2m(l)}\right)$$
 
 ## The preservation of the octave
 
