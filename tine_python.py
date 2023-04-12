@@ -1,6 +1,7 @@
 import math
 import numpy as np
 import pyaudio
+import sys
 
 SAMPLE_RATE = 44100
 
@@ -14,10 +15,7 @@ def linspace(duration):
     l = 0
     d = 1.0
 
-    t = np.zeros(L)
-    step = (d - l) / (L - 1)
-    for n in range(L):
-        t[n] = l + (n*step)
+    t = np.linspace(l, d, L)
     return t
 
 # volume
@@ -64,12 +62,16 @@ K = k(RIGIDITY, v, l)
 a = alpha(m, DAMPER)
 b = beta(m, DAMPER, K)
 
-#TODO: parameterize amplitude with displacement (in mm)
-A = 1
+#command line arguments for amplitude and time length
+#example: python3 tine_python.py 0.5 4
+if len(sys.argv) != 3:
+    print("Usage: python3 scrpt_name.py amplitude time_length")
+    sys.exit()
 
-#TODO: move this to its own function
-seconds = 4
-duration = seconds*SAMPLE_RATE
+# convert command line arguments to float
+A = float(sys.argv[1])
+seconds = float(sys.argv[2])
+duration = int(seconds*SAMPLE_RATE)
 
 t = linspace(duration)
 for n in range(duration+1):
