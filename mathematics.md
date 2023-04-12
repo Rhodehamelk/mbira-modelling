@@ -55,4 +55,4 @@ A nontrivial approximation might account for the fan-shaped tine with the defini
 [^1]: Material Densities, https://spectro.in/Densities-of-Materials.html
 [^2]: Damping Constants, https://help.solidworks.com/2016/english/solidworks/cworks/r_viscous_damping_ratios.htm
 [^3]: Modulus of Rigidity & some values https://sciencenotes.org/shear-modulus-formula-and-definition/
-[^4]: Observe that the expansion of *4mk* reveals that the term is not dependent on *l*, and also that, for small enough values of *b*, the subtraction is negligible. Therefore the entire square root can be approximated as a constant.
+[^4]: The expansion of *4mk* reveals that the term does not depend on *l* and is thus a constant. Observe also that the subtraction *4mk -b^2* is negligible for small enough values of *b*. Thus the interior of the square root can be approximated as a constant.
