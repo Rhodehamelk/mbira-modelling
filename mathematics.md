@@ -24,11 +24,11 @@ Mass, $m$, as a product of volume $V = mm^3$ and density $D = \frac{g}{mm^3}$, r
 
 For some $F$ = force, $l$ = length, $\sigma$ = cross-sectional area, and $∆x$ = transverse displacement, the Shear Modulus of Rigidity, $G = \frac{lF}{\sigma∆x}$, determines the rigidity of a metal tine subject to transverse forces. It was determined that iron has a $G = 52.5Gpa = 52.5\*10^6 \frac{N}{mm^2}$[^3].
 
-To isolate $F = \frac{\sigma∆xG}{l}$ allows Hooke's Law, $F = -k∆x$, to relate directly to $G$, such that $-k∆x = \frac{G∆x\sigma}{l}$. Thus $k = \frac{G\sigma}{l}$ (but why does the negative disappear?). With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $\sigma = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = \frac{350,000,000}{l} \frac{N}{mm}$
+To isolate $F = \frac{\sigma∆xG}{l}$ allows Hooke's Law, $F = -k∆x$, to relate directly to $G$, such that $-k∆x = \frac{G∆x\sigma}{l}$. Thus $k = \frac{G\sigma}{l}$[^4]. With $G = 52.5\*10^6 \frac{N}{mm^2}$ and $\sigma = \frac{100}{15}mm^2$ under the simplified tine model, $k$ is reduced to a function of $l$ as $k(l) = \frac{350,000,000}{l} \frac{N}{mm}$
 
 ## The General Solution to the Differential Equation
 
-For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{4mk - b^2}}{2m}$.[^4] 
+For $b^2 < 4mk$, the roots of the auxillary equation $mr^2 + br + k = 0$ are the two complex conjugates $\alpha ± i\beta = \frac{-b}{2m} ± i\frac{\sqrt{4mk - b^2}}{2m}$.[^5] 
 
 It follows that the general solution to the DE is $x(t) = Ae^{αt}sin(βt)$, where $Ae^{αt} = Ae^{\frac{-b}{2m}t}$ is a product of the amplitude and damping factor.
 
@@ -55,4 +55,5 @@ A nontrivial approximation might account for the fan-shaped tine with the defini
 [^1]: Material Densities, https://spectro.in/Densities-of-Materials.html
 [^2]: Damping Constants, https://help.solidworks.com/2016/english/solidworks/cworks/r_viscous_damping_ratios.htm
 [^3]: Modulus of Rigidity & some values https://sciencenotes.org/shear-modulus-formula-and-definition/
-[^4]: The expansion of *4mk* reveals that the term does not depend on *l* and is thus a constant. Observe also that the subtraction *4mk -b^2* is negligible for small enough values of *b*. Thus the interior of the square root can be approximated as a constant.
+[^4]: The negative sign disappears here because of how the force defined in the Shear modulus relates to the force defined in Hooke's Law.
+[^5]: The expansion of *4mk* reveals that the term does not depend on *l* and is thus a constant. Observe also that the subtraction *4mk -b^2* is negligible for small enough values of *b*. Thus the interior of the square root can be approximated as a constant.
