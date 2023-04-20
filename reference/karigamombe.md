@@ -1,4 +1,4 @@
-Karigamombe is a traditional mbira tune that is typically the first tune a player will learn. It is not very complex, as it's primordial form does not include any of the tines played by the right index finger. It is also played by the thumbs together, so it will make for an easy piece to let this model play. A simple notation based on the indexing found in (reference.md)[reference.md] follows:
+Karigamombe is a traditional mbira tune that is typically the first tune a player will learn. It is not very complex, as it's primordial form does not include any of the tines played by the right index finger. It is also played by the thumbs together, so it will make for an easy piece to let this model play. A simple notation based on the indexing found in [reference.md](reference.md) follows:
 
 | Phrase 1 | Phrase 2 | Phrase 3 | Phrase 4 |
 | -------- | -------- | -------- | -------- |
@@ -20,5 +20,3 @@ As an array of consecutive note pairs, the tune is as follows:
  (B7, R3), (L4, R3), (L3, R2), (L3, R2), (L4, R1), (L4, R1)]
 
 ```
-
-A program that sleeps for 0.25 seconds between playing each note pair would approximate the mbira music.
