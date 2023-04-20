@@ -9,7 +9,7 @@ Click the above image to be linked to a beautiful youtube video.
 
 ## Project Objectives
 
-- Objective 1 is to define a differential equation that describes the dampened sinusoidal motion of a struck mbira tine, and graph the oscillation.
+- Objective 1 is to define a differential equation that describes the dampened sinusoidal motion of a struck mbira tine.
 
 - Objective 2 is to write a program that will loop a set of (tine, displacement) instructions in real time.
 
@@ -17,16 +17,16 @@ Click the above image to be linked to a beautiful youtube video.
 
 - Objective 4 is to give consideration to the timbre of the instrument. Ideas are: to use FM synthesis to simulate the rasp of a thumb sliding off of a displaced tine, and/or synthesis rattles and buzzes.
 
-- Objective 5 is to create an integrated model of an mbira that accounts for harmonics and sympathetic resonance.
-
 
 ## Project Progress
 
-- Objective 1 is complete. [Mathematics.md](reference/mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.py](source/tine.py) programmatically implements the mathematics and uses PyAudio to play the synthesized tone. As it sounds, the pitch is rather high for the tine length. Working on that.
+- Objective 1 is complete. [Mathematics.md](reference/mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.c](source/tine.c) programmatically implements the mathematics.
 
-- Objective 2: see [Structure.md](reference/structure.md) for progress.
+- Objective 2: [Tine.py](source/tine.py) extends the implementation towards the goal of looping a set of tine pairs, akin to a traditional mbira tune. The frameworks appear to be correct in the additive synthesis approach, but specific PyAudio and NumPy format standards have proved difficult to work with (namely, numpy does not support 24-bit PCM). Aside from that, the program seems to work correctly. [Sampler.py](source/sampler.py) implements a sample-based sequencer that works.
 
-- Objective 3: see [Modality.md](reference/modality.md) for progress.
+- Objective 3: The frequency spectrum of sampled mbira tines inform the choices to be made about modal resonances, though the project did not advance far enough to implement such considerations.
+
+- Objective 4: did not happen.
 
 
 ## Project Milestones
@@ -38,3 +38,11 @@ A capable digital instrument that is able to loop a set of pitches in some kind 
 
 ### Stretch
 As expected, but also with consideration to sympathetic resonance.
+
+## Project Roles
+
+Robert wrote the outline, objectives, mathematics, initial source code, and slides.
+
+Kes analyzed samples, added CLI functionality, and implemented the sample-based sequencer.
+
+Tasks were divided fairly, and the respective weights of each others busy schedules were taken into account.
