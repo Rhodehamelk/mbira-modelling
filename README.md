@@ -22,7 +22,7 @@ Click the above image to be linked to a beautiful youtube video.
 
 - Objective 1 is complete. [Mathematics.md](reference/mathematics.md) describes a mathematical model of a tine, and demonstrates preservation of the octave relationship between tines of length $l$ and $2l$. [Tine.c](source/tine.c) programmatically implements the mathematics.
 
-- Objective 2: [Tine.py](source/tine.py) extends the implementation towards the goal of looping a set of tine pairs, akin to a traditional mbira tune. The frameworks appear to be correct in the additive synthesis approach, but specific PyAudio and NumPy format standards have proved difficult to work with (namely, numpy does not support 24-bit PCM). Aside from that, the program seems to work correctly. 
+- Objective 2: [Tine.py](source/tine.py) extends the implementation towards the goal of looping a set of tine pairs, akin to a traditional mbira tune. The frameworks appear to be correct in the additive synthesis approach, but specific PyAudio and NumPy format standards have proved difficult to work with (namely, numpy does not support 24-bit PCM). Aside from that, the program seems to work correctly. [Sampler.py](source/sampler.py) implements a sample-based sequencer that works.
 
 - Objective 3: The frequency spectrum of sampled mbira tines inform the choices to be made about modal resonances, though the project did not advance far enough to implement such considerations.
 
@@ -41,5 +41,8 @@ As expected, but also with consideration to sympathetic resonance.
 
 ## Project Roles
 
-Robert drafted the outline, objectives, mathematics, and initial source code.
+Robert wrote the outline, objectives, mathematics, initial source code, and slides.
+
 Kes analyzed samples, added CLI functionality, and implemented the sample-based sequencer.
+
+Tasks were divided fairly, and the respective weights of each others busy schedules were taken into account.
